@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "245813799404",
+    "project_id": "temoo-ae42b",
+    "storage_bucket": "temoo-ae42b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245813799404:android:a783c6eaeb1f14e5f0f8c9",
+        "android_client_info": {
+          "package_name": "com.example.tere_mood"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFDhYoFR5UIV_9GtbV_HtUgsM4FVug25g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

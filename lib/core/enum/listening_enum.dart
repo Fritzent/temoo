@@ -1,0 +1,1 @@
+enum ListeningStatus { idle, listening, checkingIn }

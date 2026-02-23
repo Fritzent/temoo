@@ -1,0 +1,1 @@
+enum AvatarSnackBarType { lovely, sad }
