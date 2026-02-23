@@ -11,7 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm ci && npm run build
+      - uses: cedvdb/action-flutter-build-web@v1
+        with:
+          build-cmd: flutter build web --release --no-source-maps --dart2js-optimization O4
+          working-directory: ./
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
