@@ -1,6 +1,7 @@
 
 import 'package:go_router/go_router.dart';
 import 'package:tere_mood/core/constant/route.dart';
+import 'package:tere_mood/features/mood_track/page/mood_question_page.dart';
 import 'package:tere_mood/features/starter/page/starter_page.dart';
 
 final GoRouter appRouter = GoRouter(
@@ -10,9 +11,9 @@ final GoRouter appRouter = GoRouter(
       path: Routes.starterPage,
       builder: (context, state) => const StarterPage(),
     ),
-    // GoRoute(
-    //   path: Routes.starterPage,
-    //   builder: (context, state) => const HomePage(),
-    // ),
+    GoRoute(
+      path: Routes.moodQuestionPage,
+      builder: (context, state) => const MoodQuestionPage(),
+    ),
   ],
 );

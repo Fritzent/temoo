@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tere_mood/core/constant/route.dart';
 import 'package:tere_mood/core/enum/listening_enum.dart';
 import 'package:tere_mood/core/theme/app_theme.dart';
 import 'package:tere_mood/core/widget/avatar_widget.dart';
@@ -88,17 +90,13 @@ class _StarterPageState extends State<_StarterPage>
           child: BlocConsumer<StarterPageBloc, StarterPageState>(
             listener: (context, state) {
               if (state.status == ListeningStatus.checkingIn) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    content: const Text('Starting your check-in session 🌸'),
-                    backgroundColor: const Color(0xFFE85C93),
-                    behavior: SnackBarBehavior.floating,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    duration: const Duration(seconds: 2),
-                  ),
-                );
+                final router = GoRouter.of(context);
+
+                Future.delayed(const Duration(seconds: 3), () {
+                  if (mounted) {
+                    router.go(Routes.moodQuestionPage);
+                  }
+                });
               }
             },
             builder: (context, state) {
@@ -234,29 +232,32 @@ class _StarterPageState extends State<_StarterPage>
                                 ),
 
                                 const SizedBox(height: 67),
-                                CheckInButton(
-                                  onPressed: () {
-                                    context.read<StarterPageBloc>().add(
-                                      StarterPageEventCheckIn(
-                                        greetingMessage: appLocalizations
-                                            .textHelloBeautifulListening,
-                                        subtitleMessage: appLocalizations
-                                            .textStarterDescriptionListening,
-                                      ),
-                                    );
-                                  },
-                                  isLoading: isCheckingIn,
-                                ),
-                                const SizedBox(height: 16),
-                                Text(
-                                  appLocalizations.textStarterFootText,
-                                  textAlign: TextAlign.center,
-                                  style: GoogleFonts.openSans(
-                                    fontSize: 12,
-                                    color: const Color(0xFFBBBBBB),
-                                    fontWeight: FontWeight.w500,
+                                if (state.status == ListeningStatus.listening) ... [
+                                  CheckInButton(
+                                    onPressed: () {
+                                      context.read<StarterPageBloc>().add(
+                                        StarterPageEventCheckIn(
+                                          greetingMessage: appLocalizations
+                                              .textHelloBeautifulListening,
+                                          subtitleMessage: appLocalizations
+                                              .textStarterDescriptionListening,
+                                        ),
+                                      );
+                                    },
+                                    isLoading: isCheckingIn,
                                   ),
-                                ),
+                                  const SizedBox(height: 16),
+                                  Text(
+                                    appLocalizations.textStarterFootText,
+                                    textAlign: TextAlign.center,
+                                    style: GoogleFonts.openSans(
+                                      fontSize: 12,
+                                      color: const Color(0xFFBBBBBB),
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                                
                                 const SizedBox(height: 32),
                               ],
                             ),

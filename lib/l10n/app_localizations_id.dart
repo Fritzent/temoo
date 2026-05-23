@@ -15,13 +15,13 @@ class AppLocalizationsId extends AppLocalizations {
   String get textListening => 'Siap Mendengarkan';
 
   @override
-  String get textIdle => 'Menunggumu';
+  String get textIdle => 'belum lapor';
 
   @override
-  String get textHelloBeautiful => 'Hallo, Cantik';
+  String get textHelloBeautiful => 'Hai, Cantik';
 
   @override
-  String get textStarterDescription => 'Aku sudah menunggumu! \n Aku di sini untuk menjadi tempatmu mencurahkan isi hati mu.';
+  String get textStarterDescription => 'Cuma hal kecil yg aku bisa, \n buat mastiin kamu tetap aman dan moodnya okay.';
 
   @override
   String get textHelloBeautifulListening => 'Jawab Jujur Yak! HEHEHE';
@@ -33,7 +33,7 @@ class AppLocalizationsId extends AppLocalizations {
   String get textStartCheck => 'Mulai Check-in';
 
   @override
-  String get textStarterFootText => '• Dibuat dengan penuh cinta •';
+  String get textStarterFootText => '• Dibuat dengan penuh niat, tekat, dan sedikit jantungan oleh orang yg berusaha deketin •';
 
   @override
   String get textStart => 'Mulai';

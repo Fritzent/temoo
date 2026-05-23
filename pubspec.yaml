@@ -28,6 +28,8 @@ dependencies:
   # UI/Assets
   flutter_svg: ^2.0.9
   firebase_core: ^4.4.0
+  get_it: ^9.2.1
+  cloud_firestore: ^6.4.1
 
 dev_dependencies:
   flutter_test:

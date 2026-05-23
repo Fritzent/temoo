@@ -1,0 +1,1 @@
+enum QuestionStatus { initial, loading, loaded, submitting, success, failure }

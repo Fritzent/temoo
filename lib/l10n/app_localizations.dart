@@ -104,67 +104,67 @@ abstract class AppLocalizations {
   /// No description provided for @textListening.
   ///
   /// In en, this message translates to:
-  /// **'Listening'**
+  /// **'Siap Mendengarkan'**
   String get textListening;
 
   /// No description provided for @textIdle.
   ///
   /// In en, this message translates to:
-  /// **'Waiting'**
+  /// **'belum lapor'**
   String get textIdle;
 
   /// No description provided for @textHelloBeautiful.
   ///
   /// In en, this message translates to:
-  /// **'Hello, Beautiful'**
+  /// **'Hai, Cantik'**
   String get textHelloBeautiful;
 
   /// No description provided for @textStarterDescription.
   ///
   /// In en, this message translates to:
-  /// **'I\'ve been waiting for you! \n I\'m here to be the place where you pour out your heart.'**
+  /// **'Cuma hal kecil yg aku bisa, \n buat mastiin kamu tetap aman dan moodnya okay.'**
   String get textStarterDescription;
 
   /// No description provided for @textHelloBeautifulListening.
   ///
   /// In en, this message translates to:
-  /// **'Answer honestly, okay? HEHEHE'**
+  /// **'Jawab Jujur Yak! HEHEHE'**
   String get textHelloBeautifulListening;
 
   /// No description provided for @textStarterDescriptionListening.
   ///
   /// In en, this message translates to:
-  /// **'because you are so precious.'**
+  /// **'karna kamu begitu berharga.'**
   String get textStarterDescriptionListening;
 
   /// No description provided for @textStartCheck.
   ///
   /// In en, this message translates to:
-  /// **'Start Check-in'**
+  /// **'Mulai Check-in'**
   String get textStartCheck;
 
   /// No description provided for @textStarterFootText.
   ///
   /// In en, this message translates to:
-  /// **'• Built with love •'**
+  /// **'• Dibuat dengan penuh niat, tekat, dan sedikit jantungan oleh orang yg berusaha deketin •'**
   String get textStarterFootText;
 
   /// No description provided for @textStart.
   ///
   /// In en, this message translates to:
-  /// **'Start'**
+  /// **'Mulai'**
   String get textStart;
 
   /// No description provided for @textHappyYouLiked.
   ///
   /// In en, this message translates to:
-  /// **'Give Understanding Boss Boss Boss'**
+  /// **'Kasih Paham Boss Boss Boss'**
   String get textHappyYouLiked;
 
   /// No description provided for @textSadNotLiked.
   ///
   /// In en, this message translates to:
-  /// **'Well, you don\'t like it huh..'**
+  /// **'Yah, kamu gk suka ya..'**
   String get textSadNotLiked;
 }
 

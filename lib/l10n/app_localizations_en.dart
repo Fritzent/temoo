@@ -12,35 +12,35 @@ class AppLocalizationsEn extends AppLocalizations {
   String get textAppTitle => 'TeMoo';
 
   @override
-  String get textListening => 'Listening';
+  String get textListening => 'Siap Mendengarkan';
 
   @override
-  String get textIdle => 'Waiting';
+  String get textIdle => 'belum lapor';
 
   @override
-  String get textHelloBeautiful => 'Hello, Beautiful';
+  String get textHelloBeautiful => 'Hai, Cantik';
 
   @override
-  String get textStarterDescription => 'I\'ve been waiting for you! \n I\'m here to be the place where you pour out your heart.';
+  String get textStarterDescription => 'Cuma hal kecil yg aku bisa, \n buat mastiin kamu tetap aman dan moodnya okay.';
 
   @override
-  String get textHelloBeautifulListening => 'Answer honestly, okay? HEHEHE';
+  String get textHelloBeautifulListening => 'Jawab Jujur Yak! HEHEHE';
 
   @override
-  String get textStarterDescriptionListening => 'because you are so precious.';
+  String get textStarterDescriptionListening => 'karna kamu begitu berharga.';
 
   @override
-  String get textStartCheck => 'Start Check-in';
+  String get textStartCheck => 'Mulai Check-in';
 
   @override
-  String get textStarterFootText => '• Built with love •';
+  String get textStarterFootText => '• Dibuat dengan penuh niat, tekat, dan sedikit jantungan oleh orang yg berusaha deketin •';
 
   @override
-  String get textStart => 'Start';
+  String get textStart => 'Mulai';
 
   @override
-  String get textHappyYouLiked => 'Give Understanding Boss Boss Boss';
+  String get textHappyYouLiked => 'Kasih Paham Boss Boss Boss';
 
   @override
-  String get textSadNotLiked => 'Well, you don\'t like it huh..';
+  String get textSadNotLiked => 'Yah, kamu gk suka ya..';
 }

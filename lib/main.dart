@@ -6,10 +6,13 @@ import 'package:tere_mood/core/router/app_router.dart';
 import 'package:tere_mood/core/theme/app_theme.dart';
 import 'package:tere_mood/core/theme/bloc/theme_bloc.dart';
 import 'package:tere_mood/firebase_options.dart';
+import 'package:tere_mood/injection.dart';
 import 'package:tere_mood/l10n/app_localizations.dart';
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await initInjection();
+  
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
